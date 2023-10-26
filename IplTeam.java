@@ -13,7 +13,7 @@ public class IplTeam {
 	 }
 	 public void read() {
 		 for(int i=0;i<teamName.length;i++) {
-			 System.out.println("teamName are:"+teamName[i]);
+			 System.out.println("teamName is:"+teamName[i]);
 		 }
 	 }
 	 public void update(String oldName,String newName) {
