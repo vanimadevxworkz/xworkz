@@ -368,4 +368,4 @@ public boolean getIsVersion1() {
 	return this.isVersion1;
 }
 }
-
+  
