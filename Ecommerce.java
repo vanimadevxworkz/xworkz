@@ -1,9 +1,7 @@
 package com.xworkz.Shopping.things;
 
-public class Ecommerce  extends ProgrammingLanguage {
+public class Ecommerce extends Products{
+	
+	
 
-	public Ecommerce() {
-		super();
-		System.out.println("this is derived class");
-	}
 }
