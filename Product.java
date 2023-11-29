@@ -1,10 +1,10 @@
-package com.xworkz.Shopping.things;
+package com.xworkz.product.adbstract;
 
-interface Product {
- public String productName="soybeans";
- public String productsTypes="chemicals";
- public float quantity=50.0f;
- 
+import com.xworkz.product.dto.ProductDto;
+
+public abstract class Product {
 	
-	 
- }
+	public abstract boolean onSave(ProductDto productDto);
+
+}
+
