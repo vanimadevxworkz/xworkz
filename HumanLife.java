@@ -1,6 +1,8 @@
 package com.xworkz.lifeimpl;
 
 import com.xworkz.life.abstracts.Life;
+import com.xworkz.life.dto.LifeDto;
+
 
 public class HumanLife extends Life {
 
@@ -58,6 +60,21 @@ public class HumanLife extends Life {
 	public void education() {
 		System.out.println("education method");
 	}
+	 Object obj[]=new Object[4];
+	    int index=0;
+		@Override
+		public boolean onSave(LifeDto lifeDto) {
+			if(lifeDto!=null) {
+				System.out.println("dto is not null");
+				if(index<obj.length) {
+				obj[index]=lifeDto;
+				index++;
+				}
+			}else {
+				System.out.println("dto is   null");
+			}
+			return false;
+		}
 	
 	
 
