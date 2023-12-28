@@ -18,6 +18,21 @@ public class CountriesRunner {
 		service.validate("chaina");
 		service.validate("uk");
 		service.validate("usa");
+		service.read();
+		
+		System.out.println("REading data");
+		//repo.read();
+		String oldName="india";
+		String newName="russia";
+		
+		service.update(oldName,newName);
+		service.read();
+		
+		service.delete("uk");
+		service.read();
+	
+		
+		
 				
 		
 	}
