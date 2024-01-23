@@ -1,0 +1,12 @@
+package com.xworkz.malpe.service;
+
+import com.xworkz.malpe.dto.MalpeDto;
+
+public interface MalpeService {
+	
+	boolean validate(MalpeDto malpeDto);
+	void readAll();
+	
+	boolean isExist(MalpeDto malpeDto);
+
+}
